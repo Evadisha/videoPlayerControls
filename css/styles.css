@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mystery Quest', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background-color: #666;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+.screen {
+    background-color: #000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 75%;
+    cursor: pointer;
+}
+
+.controls {
+    background: #333;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    padding: 10px;
+}
+
+.controls .btn {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+.controls .fa-play {
+    color: #28a745;
+}
+
+.controls .fa-stop {
+    color: #dc3545;
+}
+
+.controls .fa-pause {
+    color: #fff;
+}
+
+.controls .timestamp {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+@media (max-width:700px) {
+    .screen,
+    .container {
+        width: 90%;
+    }
+}
